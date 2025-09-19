@@ -10,7 +10,11 @@ const swiper = new Swiper(".mySwiper", {
         nextEl: ".next"
     },
 
-    loop: true
+    loop: true,
+    breakpoints{
+    600{
+        slidesPerView: 1
+    }
 });
 
 const heroSwipe = new Swiper(".hero-slider", {
@@ -25,4 +29,5 @@ const heroSwipe = new Swiper(".hero-slider", {
     effect: 'fade',
     
     loop: true
+
 });
